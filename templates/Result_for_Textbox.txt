@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS_for_Textbox.css') }}">
+</head>
+ <body>
+<div class="wrapper">
+
+<div class="header">
+<h1>HTML Form - Text Box</h1>
+</div>
+
+<div class="body">
+ 
+<br>
+
+<p><right><a href="{{ url_for('TXTboxData')}}"> Home Page </a></right></p>
+
+<br>
+<div class="border">
+<br>
+<br>
+ 
+<p>Your Name is:  {{SName}} </p><br>
+<p>Your are from:  {{Location}} </p><br>
+<p>Your Pin code is:  {{Pin}} </p><br>
+
+
+ 
+<br>
+<br>
+
+ 
+
+ </div>
+
+<br>
+<br>
+
+
+      
+ </div>
+
+<div class="footer">
+<marquee scrollamount="2" behavior="alternate"> <h1>www.Tricks12345.com</h1></marquee>
+
+</div>
+
+</div>
+      
+   </body>
+</html>
