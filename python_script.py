@@ -64,6 +64,3 @@ def resuelvelo():
      archivo.close()
      return linder
     
-if __name__ == '__main__':
- # Iniciamos la aplicación
- app.run(debug=True)
