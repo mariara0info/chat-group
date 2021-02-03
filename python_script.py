@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 # instancia del objeto Flask
 app = Flask(__name__)
 # Carpeta de subida
-app.config['UPLOAD_FOLDER'] = 'chat/Archivos'
+app.config['UPLOAD_FOLDER'] = 'Archivos'
 
 @app.route("/")
 def upload_file():
@@ -35,12 +35,12 @@ def resuelvelo():
      import numpy as np
      import pandas as pd
 
-     df = pd.read_csv('chat/Archivos/links.txt')
+     df = pd.read_csv('Archivos/links.txt')
      lola= np.asarray(df)
      chat= list()
      linder=list()
      image1=list()
-     archivo = open('chat/grupos.txt', 'w' , encoding='UTF8')
+     archivo = open('grupos.txt', 'w' , encoding='UTF8')
 
      for s in lola:
           listToStr = ' '.join([str(elem) for elem in s]) 
@@ -64,3 +64,6 @@ def resuelvelo():
      archivo.close()
      return linder
     
+if __name__ == '__main__':
+ # Iniciamos la aplicación
+ app.run(debug=True)    
